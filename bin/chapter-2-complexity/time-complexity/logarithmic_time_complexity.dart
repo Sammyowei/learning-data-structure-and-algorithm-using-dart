@@ -8,6 +8,8 @@ void main() {
 // this algorithm is used only when a subset of the
 //input needs to be inspected.
 
+//  the Big-O notation for this time algorithm is O(log n)
+
 const numbers = [34, 45, 66, 77, 88, 99, 100, 350, 400, 450];
 
 //  This algorithm would be an O(n) algorithm (Linear Time Complexity)
