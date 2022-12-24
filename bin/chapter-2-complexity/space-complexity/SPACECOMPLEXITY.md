@@ -1,12 +1,12 @@
 The time complexity of an algorithm can help predict scalability, but it isn’t the only 
-metric. ##Space complexity is a measure of the memory required for an algorithm to 
+metric. **Space complexity** is a measure of the memory required for an algorithm to 
 run.
 Consider the following code:
 
 
-int multiply(int a, int b) {
- return a * b;
-}
+**int multiply(int a, int b) {**
+ **return a * b;**
+**}**
 
 
 To perform this simple algorithm, Dart needs to allocate space for the two input 
@@ -18,9 +18,9 @@ means the space complexity for this algorithm is constant, and so the Big O
 notation is O(1).
 However, now take a look at this example:
 
-List<String> fillList(int length) {
- return List.filled(length, 'a');
-}
+**List<String> fillList(int length) {**
+ **return List.filled(length, 'a');**
+**}**
 
 
 This algorithm creates a list filled with the string 'a'. The larger length is, the 
@@ -31,9 +31,9 @@ With one small change you could make that algorithm have quadratic space
 complexity:
 
 
-List<String> stuffList(int length) {
- return List.filled(length, 'a' * length);
-}
+**List<String> stuffList(int length) {**
+ **return List.filled(length, 'a' * length);**
+**}**
 
 
 Not only do larger values for length make the list longer, they also increase the size 
