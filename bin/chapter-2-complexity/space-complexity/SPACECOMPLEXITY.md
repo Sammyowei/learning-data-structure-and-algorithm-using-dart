@@ -5,7 +5,7 @@ Consider the following code:
 
 
 **int multiply(int a, int b) {**<br>
- **return a * b;**
+ **return a * b;**<br>
 **}**
 
 
@@ -19,8 +19,8 @@ means the space complexity for this algorithm is constant, and so the Big O
 notation is O(1).
 However, now take a look at this example:
 
-**List<String> fillList(int length) {**
- **return List.filled(length, 'a');**
+**List<String> fillList(int length) {**<br>
+      **return List.filled(length, 'a');**<br>
 **}**
 
 
@@ -32,8 +32,8 @@ With one small change you could make that algorithm have quadratic space
 complexity:
 
 
-**List<String> stuffList(int length) {**
- **return List.filled(length, 'a' * length);**
+**List<String> stuffList(int length) {**<br>
+ **return List.filled(length, 'a' * length);**<br>
 **}**
 
 
